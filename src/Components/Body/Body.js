@@ -10,9 +10,9 @@ class Body extends Component {
         deadlineDate: new Date().toLocaleDateString(),
         responsible: 'AAAA AAAA'
     };
+    let auth = true;
     return (
       <div className='body'>
-
         <div className='text'>
             <h1 class='text-uppercase'>{typeOfTasks} tasks</h1>
         </div>
@@ -57,9 +57,8 @@ class Body extends Component {
                     <p class="card-text card-columns">{task.responsible}</p>
                 </div>
             </div>
-        </div>
-        
-      </div>
+        </div> 
+    </div>
     );
   }
 }

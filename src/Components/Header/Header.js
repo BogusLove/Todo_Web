@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './Header.css';
 import days from '../../days';
 
@@ -18,10 +19,10 @@ class Header extends Component {
     };
 
     render() {   
-        let auth = true;
+        let auth = false;
         const date = this.state.date;
-        return (
-            <div className='header'>   
+        return (            
+            <div className='header'>               
                 <nav class='navbar navbar-expand-lg navbar-light bg-dark'>
                     <div class='collapse navbar-collapse float-right'>
                         <a class="navbar-brand" href="/"><h3 class='text-light font-weight-bold'>Home</h3></a>                    
@@ -31,14 +32,14 @@ class Header extends Component {
                     </div>                    
                     {auth ? (
                         <div>                            
-                            <a class="btn btn-success btn-lg" href="/user_tasks" role="button">Own tasks</a>                    
-                            <a class="btn btn-danger btn-lg" href="/groups_tasks" role="button">Group tasks</a>                    
+                            <Link to='/user_tasks' class="btn btn-success btn-lg" role="button">Own tasks</Link>                    
+                            <Link class="btn btn-danger btn-lg" to="/group_tasks" role="button">Group tasks</Link>                    
                             <a class="btn btn-warning btn-lg" href="/account" role="button">Account</a>                    
                             <a class="btn btn-primary btn-lg" href="/logout" role="button">Log out</a>                    
                         </div>   
                     ) : (
                         <div>
-                            <a class="btn btn-primary btn-lg" href="/signin" role="button">Sign In</a>                    
+                            <Link to='/signin' class="btn btn-primary btn-lg" role="button">Sign In</Link>                   
                         </div>  
                     )}                             
                 </nav>
