@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Body.css';
+import {Link} from 'react-router-dom';
 
 class Body extends Component {
   render() {   
@@ -42,6 +43,11 @@ class Body extends Component {
                     <p class="card-text">{task.description}</p>
                     <p class="card-text card-columns">{task.responsible}</p>
                 </div>
+                <div class='buttonsDiv'>
+                    <Link to='/details' role='button' class='btn btn-info float-left'>Details</Link>
+                    <a to='/done_task' role='button' class='btn btn-success float-right'>DONE</a>
+                </div>
+                
             </div>  
         </div>
 

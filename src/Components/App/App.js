@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import Body from '../Body/Body';
 import SignIn from '../SignIn/SignIn';
 import SignUp from '../SignUp/SignUp';
+import Task from '../Task/Task';
 
 class App extends Component {
   render() {   
@@ -18,6 +19,7 @@ class App extends Component {
             <Route path='/group_tasks' component={Body}/>
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
+            <Route path='/details' component={Task}/>
           </div>          
         </BrowserRouter>        
     );

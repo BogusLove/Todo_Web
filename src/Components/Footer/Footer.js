@@ -13,9 +13,9 @@ class Header extends Component {
         return (
             <div className='footer'>        
                 <nav class="navbar bg-dark fixed-bottom">
-                    <h4 class='text-light text-left font-weight-bold'></h4>
-                    <h4 class='text-light text-center font-weight-bold'>2018 @boguscompany</h4>
-                    <h4 class='text-light text-right font-weight-bold'></h4>
+                    <h6 class='text-light text-left font-weight-bold'></h6>
+                    <h6 class='text-light text-center font-weight-bold'>2018 @boguscompany</h6>
+                    <h6 class='text-light text-right font-weight-bold'></h6>
                 </nav>      
             </div>
         );

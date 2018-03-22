@@ -17,8 +17,10 @@ class SignIn extends Component {
                     </div> 
                     <div class='m-3'>
                         <Link to='/signup'>Not have account: Sign Up</Link>
-                    </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>                    
+                    <button type="submit" class="btn btn-success m-2">Sign In</button>
+                    <br/>
+                    <a href='/facebook' class="btn btn-primary" role='button'>Facebook</a>
             </form>
       </div>
     );

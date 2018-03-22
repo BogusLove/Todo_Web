@@ -19,7 +19,7 @@ class Header extends Component {
     };
 
     render() {   
-        let auth = false;
+        let auth = true;
         const date = this.state.date;
         return (            
             <div className='header'>               
@@ -34,7 +34,7 @@ class Header extends Component {
                         <div>                            
                             <Link to='/user_tasks' class="btn btn-success btn-lg" role="button">Own tasks</Link>                    
                             <Link class="btn btn-danger btn-lg" to="/group_tasks" role="button">Group tasks</Link>                    
-                            <a class="btn btn-warning btn-lg" href="/account" role="button">Account</a>                    
+                            <a class="btn btn-warning btn-lg text-white" href="/account" role="button">Account</a>                    
                             <a class="btn btn-primary btn-lg" href="/logout" role="button">Log out</a>                    
                         </div>   
                     ) : (
