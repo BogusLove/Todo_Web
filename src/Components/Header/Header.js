@@ -32,8 +32,8 @@ class Header extends Component {
                     </div>                    
                     {auth ? (
                         <div>                            
-                            <Link to='/user_tasks' class="btn btn-success btn-lg" role="button">Own tasks</Link>                    
-                            <Link class="btn btn-danger btn-lg" to="/group_tasks" role="button">Group tasks</Link>                    
+                            <Link class="btn btn-success btn-lg" to='/user_tasks/:id'  role="button">Own tasks</Link>                    
+                            <Link class="btn btn-danger btn-lg" to="/group_tasks/:id" role="button">Group tasks</Link>                    
                             <a class="btn btn-warning btn-lg text-white" href="/account" role="button">Account</a>                    
                             <a class="btn btn-primary btn-lg" href="/logout" role="button">Log out</a>                    
                         </div>   

@@ -15,7 +15,7 @@ class App extends Component {
           <div class='App'>
             <Header/>
             <Footer/>
-            <Route path='/user_tasks' component={Body}/>
+            <Route path='/user_tasks' render={() => { <Body owner='user' /> }}/>
             <Route path='/group_tasks' component={Body}/>
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
