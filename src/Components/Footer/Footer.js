@@ -12,10 +12,10 @@ class Header extends Component {
     render() {          
         return (
             <div className='footer'>        
-                <nav class="navbar bg-dark fixed-bottom">
-                    <h6 class='text-light text-left font-weight-bold'></h6>
-                    <h6 class='text-light text-center font-weight-bold'>2018 @boguscompany</h6>
-                    <h6 class='text-light text-right font-weight-bold'></h6>
+                <nav className="navbar bg-dark fixed-bottom">
+                    <h6 className='text-light text-left font-weight-bold'></h6>
+                    <h6 className='text-light text-center font-weight-bold'>2018 @boguscompany</h6>
+                    <h6 className='text-light text-right font-weight-bold'></h6>
                 </nav>      
             </div>
         );

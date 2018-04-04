@@ -11,8 +11,8 @@ import Task from '../Task/Task';
 class App extends Component {
   render() {   
     return (
-        <BrowserRouter>
-          <div class='App'>
+        <BrowserRouter className='App'>
+          <div>
             <Header/>
             <Footer/>
             <Route path='/user_tasks' render={() => { <Body owner='user' /> }}/>

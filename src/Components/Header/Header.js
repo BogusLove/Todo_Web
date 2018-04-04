@@ -15,7 +15,7 @@ class Header extends Component {
         setInterval(() => {
             this.state.date = new Date();
             this.setState({state: new Date()});
-        }, 1000)
+        }, 1000);
     };
 
     render() {   
@@ -23,23 +23,23 @@ class Header extends Component {
         const date = this.state.date;
         return (            
             <div className='header'>               
-                <nav class='navbar navbar-expand-lg navbar-light bg-dark'>
-                    <div class='collapse navbar-collapse float-right'>
-                        <a class="navbar-brand" href="/"><h3 class='text-light font-weight-bold'>Home</h3></a>                    
+                <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
+                    <div className='collapse navbar-collapse float-right'>
+                        <a className="navbar-brand" href="/"><h3 className='text-light font-weight-bold'>Home</h3></a>                    
                     </div>
-                    <div class='collapse navbar-collapse float-left'>
-                        <h3 class='text-light text-center'>{days[this.state.date.getDay()]} {date.toLocaleString('ru')}</h3>                   
+                    <div className='collapse navbar-collapse float-left'>
+                        <h3 className='text-light text-center'>{days[this.state.date.getDay()]} {date.toLocaleString('ru')}</h3>                   
                     </div>                    
                     {auth ? (
                         <div>                            
-                            <Link class="btn btn-success btn-lg" to='/user_tasks/:id'  role="button">Own tasks</Link>                    
-                            <Link class="btn btn-danger btn-lg" to="/group_tasks/:id" role="button">Group tasks</Link>                    
-                            <a class="btn btn-warning btn-lg text-white" href="/account" role="button">Account</a>                    
-                            <a class="btn btn-primary btn-lg" href="/logout" role="button">Log out</a>                    
+                            <Link className="btn btn-success btn-lg" to='/user_tasks/:id'  role="button">Own tasks</Link>                    
+                            <Link className="btn btn-danger btn-lg" to="/group_tasks/:id" role="button">Group tasks</Link>                    
+                            <a className="btn btn-warning btn-lg text-white" href="/account" role="button">Account</a>                    
+                            <a className="btn btn-primary btn-lg" href="/logout" role="button">Log out</a>                    
                         </div>   
                     ) : (
                         <div>
-                            <Link to='/signin' class="btn btn-primary btn-lg" role="button">Sign In</Link>                   
+                            <Link to='/signin' className="btn btn-primary btn-lg" role="button">Sign In</Link>                   
                         </div>  
                     )}                             
                 </nav>
